@@ -28,7 +28,7 @@ public class RegisterParameterTest {
     }
 
     // Параметризация параметров
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "email = {0}, password = {1}, name = {2}")
     public static Object[][] getData() {
         return new Object[][]{
                 {null, "testpassword", "testname1"},

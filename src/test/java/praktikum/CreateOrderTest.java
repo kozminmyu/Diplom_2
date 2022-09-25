@@ -40,7 +40,7 @@ public class CreateOrderTest {
     }
 
     // Параметризация параметра
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Use authorization token: {0}")
     public static Object[] getData() {
         return new Object[]{
                 true,
